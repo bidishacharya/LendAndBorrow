@@ -15,5 +15,7 @@ class TaskController {
             }
         }
 
-    def dashboard(){}
+    def dashboard(){
+
+    }
 }

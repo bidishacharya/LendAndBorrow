@@ -1,5 +1,7 @@
 package com.lb.auth
 
+import lendandborrow.TransactionHistory
+
 class User implements Serializable {
 
 	private static final long serialVersionUID = 1
@@ -15,8 +17,10 @@ class User implements Serializable {
 	boolean accountLocked
 	boolean passwordExpired
 
+	static hasMany = [transactionHistory:TransactionHistory]
+
 	User(String name,String email,String username, String password) {
-		this()
+//		this()
 		this.name=name
 		this.email=email
 		this.username = username
